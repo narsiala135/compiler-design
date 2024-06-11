@@ -1,0 +1,15 @@
+/* Lex program to check whether input is digit or not. */
+%{
+#include <stdio.h>
+%}
+
+%%
+^[0-9]+ { printf("digit\n"); }
+. ; 
+%%
+
+int main() {
+    printf("Enter some input:\n");
+    yylex();
+    return 0;
+}
