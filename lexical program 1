@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+void skipwhitespaces and comments();
+int isoperator(char(ch));
+void getnexttoken();
+void process identifier();
+file sourcefile;
+int currentchar();
+int main()
+{
+sourcefile=fopen("source.c","r");
+if(!sourcefile){
+printf("from:cannot open sourcefile.\n");
+return 0;
+}
+getnexttoken();
+fcbse(sourcefile);
+return 0;
+}
+void skipwhitespaces and comments(){
+while(is space(current char))||char=='/');
+if(current char='/'){
+while(current char!='\n'&& current!=eof){
+current char=fgete(sourcefile);
+}
+}
+else if(current char=='r'){
+while(1){
+current char=fgets(source file);
+if(current char='t'&&(current char.fgets(source.file));
+break;
+}
+}
+}else{
+ungetsx(current char,sourcefile);
+current char='/';
+}}
+current char=fgets(sourcefile);
+}
+}
+current char=fgets(sourcefile);
+}
+}
+void process number(){
+char number[max_id_len];
+int i=0;
+do{
+if(i<max_id_len-1){
+number[i+1]=current char;
+}
+
+
+
