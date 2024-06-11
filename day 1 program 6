@@ -1,0 +1,18 @@
+/* Lex program to Identify and Count Positive and Negative Numbers */
+
+%{
+#include <stdio.h>
+%}
+
+/* Rules for identifying and counting positive and negative numbers */
+%%
+^[-][0-9]+   { printf("negative number = %s\n", yytext); }
+[0-9]+       { printf("positive number = %s\n", yytext); }
+%%
+
+int main() {
+    yylex();
+    printf("number of positive numbers = %d, number of negative numbers = %d\n",
+           positive_no, negative_no);
+    return 0;
+}
